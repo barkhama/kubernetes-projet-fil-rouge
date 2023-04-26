@@ -1,0 +1,7 @@
+apiVersion: v1
+Kind: NameSpace
+metadata:
+  name: ic-webapp
+  labels:
+    env: prod
+
