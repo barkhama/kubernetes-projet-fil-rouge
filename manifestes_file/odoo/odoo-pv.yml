@@ -1,0 +1,16 @@
+apiVersion: v1
+Kind: PersistentVolume
+metadata:
+  name: odoo-pv
+  labels:
+    type: local
+    env: prod
+  namespace: ic-webapp
+spec:
+  storageClassName: manuel
+  capacity:
+    storage: 20Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: "/data_k8s/lib-odoo"
