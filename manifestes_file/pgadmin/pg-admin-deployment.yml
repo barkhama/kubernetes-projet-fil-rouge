@@ -29,7 +29,7 @@ spec:
               key: PGADMIN_DEFAULT_PASSWORD
         ports:
         - containerPort: 5050
-          name: postgress
+          name: postgres
         volumeMounts:
         - name: pg-admin-server
           mountPath: /pgadmin4/servers.json
